@@ -18,7 +18,7 @@
         <tr>
             <td><?php echo $linha['nome']?></td>
             <td><?php echo $linha['email']?></td>
-            <td><input type="button" value="deletar" id="botaoDeleta" onclick="exluiInteressado(<?php echo $linha['emails']?>)"></td>
+            <td><input type="button" value="deletar" id="botaoDeleta" onclick="excluiInteressado('<?php echo $linha['email']?>')"></td>
         </tr>
     <?php } ?>
 </table>

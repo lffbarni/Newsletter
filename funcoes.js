@@ -59,9 +59,9 @@ $(document).ready(function(){
         });  
     })
 });
-function exluiInteressado(emailInformado){
-    $.post("deletaInteressado", {email : emailInformado}, function(){
-        $.get("funcaoListaInteressados", function(texto){
+function excluiInteressado(emailInformado){
+    $.post("deletaInteressado.php", {email : emailInformado}, function(data){
+        $.get("funcaoListaInteressados.php", function(texto){
             $("#tabela").html(texto);
         })
     })
